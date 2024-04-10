@@ -1,0 +1,9 @@
+zerops:
+  - setup: helloworld
+    build:
+      base: rust@1
+      buildCommands:
+        - cargo b --release
+      deploy: target/release/~app
+    run:
+      start: ./app
